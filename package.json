@@ -1,0 +1,53 @@
+{
+  "name": "gestigaia",
+  "private": true,
+  "description": "gestigaia",
+  "version": "0.1.0",
+  "author": "Jose Tavares <josetavares00@gmail.com>",
+  "dependencies": {
+    "@emotion/core": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "gatsby": "^2.18.22",
+    "gatsby-cli": "^2.8.27",
+    "gatsby-plugin-emotion": "^4.1.21",
+    "gatsby-plugin-google-analytics": "^2.1.33",
+    "gatsby-plugin-manifest": "^2.2.37",
+    "gatsby-plugin-netlify": "^2.1.31",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sharp": "^2.3.13",
+    "gatsby-plugin-sitemap": "^2.2.25",
+    "gatsby-transformer-sharp": "^2.3.12",
+    "prettier": "^1.19.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "gatsby-plugin-offline": "^3.0.32"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.js",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "npm run lint",
+    "lint": "eslint 'src/' --color --ext .js"
+  },
+  "resolutions": {
+    "lodash": "4.17.15",
+    "eslint-utils": "1.4.2"
+  }
+}
