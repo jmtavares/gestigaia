@@ -27,12 +27,6 @@ module.exports = {
                 display: "swap"
             }
         },
-        {
-            resolve: `gatsby-plugin-google-analytics`,
-            options: {
-                trackingId: process.env.GA
-            }
-        },
         `gatsby-plugin-netlify`,
         `gatsby-plugin-emotion`,
         `gatsby-transformer-sharp`,
