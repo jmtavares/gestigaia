@@ -23,6 +23,7 @@ const Layout = ({ children }) => (
               padding: 0;
               font-family: "Cormorant Garamond", serif;
               background-color: #ffffff;
+              color: #081824;
             }
 
             li {
