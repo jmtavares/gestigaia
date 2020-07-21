@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { Link } from "gatsby";
 import Logo from "../../images/logo.webp";
 import { H1 } from "../../styles/typography";
 
+
 const HeaderContainer = styled.div`
-  display: flex;
-  align-items: center;
   padding-bottom: 20px;
   border-bottom: 2px solid #081824;
   margin: 35px 25px 0 25px;
@@ -27,10 +27,18 @@ const LogoImg = styled.img`
   }
 `;
 
+const StyledLink = styled(Link)`
+  display: flex;
+  align-items: center;    
+  text-decoration: none;
+`;
+
 const Header = () => (
   <HeaderContainer>
-    <LogoImg src={Logo} alt="Logo" />
-    <H1>Gestigaia - Gabinete de Contabilidade</H1>
+    <StyledLink to="/">
+      <LogoImg src={Logo} alt="Logo" />
+      <H1>Gestigaia - Gabinete de Contabilidade</H1>
+    </StyledLink>
   </HeaderContainer>
 );
 

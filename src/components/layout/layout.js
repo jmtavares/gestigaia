@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import { Global, css } from "@emotion/core";
-import { GlobalContainer } from "../../styles/typography";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -22,6 +21,8 @@ const Layout = ({ children }) => (
             body {
               margin: 0;
               padding: 0;
+              font-family: "Cormorant Garamond", serif;
+              background-color: #ffffff;
             }
 
             li {
@@ -29,9 +30,7 @@ const Layout = ({ children }) => (
             }
           `}
         />
-        <GlobalContainer>
-          <main>{children}</main>
-        </GlobalContainer>
+        <main>{children}</main>
       </>
     )}
   />
