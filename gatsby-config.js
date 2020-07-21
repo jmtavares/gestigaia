@@ -18,7 +18,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `fullscreen`,
-        icon: 'src/images/Logo.webp'
+        icon: 'src/images/logo.webp'
       },
     },
     {
