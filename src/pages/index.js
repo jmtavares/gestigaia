@@ -1,26 +1,17 @@
 import React from "react";
-import styled from "@emotion/styled";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
-import Hello from "../components/hello/hello";
-
-const IndexContainer = styled.div`
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  width: 100vw;
-`;
+import Header from "../components/header";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <SEO title="Gestigaia" keywords={[]} />
+      <SEO
+        title="Gestigaia - Gabinete de Contabilidade | Seguros | Oliveira do Douro"
+        keywords={[]}
+      />
 
-      <IndexContainer>
-        <Hello />
-      </IndexContainer>
+      <Header />
     </Layout>
   );
 };
