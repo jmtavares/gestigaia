@@ -29,6 +29,10 @@ module.exports = {
             family: `Cormorant+Garamond`,
             variants: [`400`, `600`],
           },
+          {
+            family: `Roboto`,
+            variants: [`100`],
+          },
         ],
         display: "swap",
       },
@@ -38,5 +42,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-anchor-links`
   ],
 };

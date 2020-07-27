@@ -3,6 +3,10 @@ import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Home from "../components/home";
+import AboutUs from "../components/about-us";
+import Services from "../components/services";
+import ContactUs from "../components/contact-us";
 
 const IndexPage = () => {
   return (
@@ -13,6 +17,10 @@ const IndexPage = () => {
       />
 
       <Header />
+      <Home />
+      <AboutUs />
+      <Services />
+      <ContactUs />
       <Footer />
     </Layout>
   );
