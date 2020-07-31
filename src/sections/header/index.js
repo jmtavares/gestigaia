@@ -54,7 +54,7 @@ const TitleContainer = styled.div`
   align-items: center;
 `;
 
-const Header = () => (
+const Header = ({ showMenu = true }) => (
   <HeaderContainer>
     <LogoContainer>
       <StyledLink to="/">
@@ -66,31 +66,33 @@ const Header = () => (
         </StyledLink>
       </TitleContainer>
     </LogoContainer>
-    <MenuContainer>
-      <Menus>
-        <ScrollLink to="#home" title="Home">
-          Home
-        </ScrollLink>
-        <ScrollLink to="#about-us" title="Sobre Nós">
-          Sobre Nós
-        </ScrollLink>
-        <ScrollLink to="#services" title="Serviços">
-          Serviços
-        </ScrollLink>
-        <ScrollLink to="#contact-us" title="Contacte-nos">
-          Contacte-nos
-        </ScrollLink>
-      </Menus>
-      <div>
-        <Link
-          to="https://www.facebook.com/gestigaia"
-          target="_blank"
-          rel="noopener"
-        >
-          <img src={FacebookLogo} alt="Facebook" />
-        </Link>
-      </div>
-    </MenuContainer>
+    {showMenu ? (
+      <MenuContainer>
+        <Menus>
+          <ScrollLink to="#home" title="Home">
+            Home
+          </ScrollLink>
+          <ScrollLink to="#about-us" title="Sobre Nós">
+            Sobre Nós
+          </ScrollLink>
+          <ScrollLink to="#services" title="Serviços">
+            Serviços
+          </ScrollLink>
+          <ScrollLink to="#contact-us" title="Contacte-nos">
+            Contacte-nos
+          </ScrollLink>
+        </Menus>
+        <div>
+          <Link
+            to="https://www.facebook.com/gestigaia"
+            target="_blank"
+            rel="noopener"
+          >
+            <img src={FacebookLogo} alt="Facebook" />
+          </Link>
+        </div>
+      </MenuContainer>
+    ) : null}
   </HeaderContainer>
 );
 

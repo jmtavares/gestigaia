@@ -37,8 +37,7 @@ module.exports = {
             family: `Montserrat`,
             variants: [`400`],
           },
-        ],
-        display: "swap",
+        ]        
       },
     },
     `gatsby-plugin-netlify`,
