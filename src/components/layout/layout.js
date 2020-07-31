@@ -18,8 +18,7 @@ const Layout = ({ children }) => (
       <>
         <Global
           styles={css`
-            body {
-              font-display: block;
+            body {              
               margin: 0;
               padding: 0;
               font-family: "Cormorant Garamond", serif;
