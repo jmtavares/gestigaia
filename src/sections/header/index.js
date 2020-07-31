@@ -82,7 +82,11 @@ const Header = () => (
         </ScrollLink>
       </Menus>
       <div>
-        <Link to="https://www.facebook.com/gestigaia" target="_blank">
+        <Link
+          to="https://www.facebook.com/gestigaia"
+          target="_blank"
+          rel="noopener"
+        >
           <img src={FacebookLogo} alt="Facebook" />
         </Link>
       </div>

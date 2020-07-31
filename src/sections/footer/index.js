@@ -23,12 +23,16 @@ const Row = styled.div`
 const Footer = () => (
   <FooterContainer>
     <Row>
-      <StyledLink to="https://www.livroreclamacoes.pt/" target="_blank">
+      <StyledLink
+        to="https://www.livroreclamacoes.pt/"
+        target="_blank"
+        rel="noopener"
+      >
         Livro de Reclamações
       </StyledLink>
     </Row>
     <Row>
-      <StyledLink to="https://www.cicap.pt/" target="_blank">
+      <StyledLink to="https://www.cicap.pt/" target="_blank" rel="noopener">
         Resolução de Conflitos
       </StyledLink>
     </Row>

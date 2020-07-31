@@ -49,7 +49,7 @@ const Section = styled.div`
   background-color: ${(props) => props.backgroundColor};
 `;
 
-const SectionTitle = styled.h3`
+const SectionTitle = styled.h1`
   margin: 0;
   font-size: 22px;
 `;
