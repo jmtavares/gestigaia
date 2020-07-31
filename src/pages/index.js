@@ -1,12 +1,12 @@
 import React from "react";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
-import Header from "../components/header";
-import Footer from "../components/footer";
-import Home from "../components/home";
-import AboutUs from "../components/about-us";
-import Services from "../components/services";
-import ContactUs from "../components/contact-us";
+import Header from "../sections/header";
+import Footer from "../sections/footer";
+import Home from "../sections/home";
+import AboutUs from "../sections/about-us";
+import Services from "../sections/services";
+import ContactUs from "../sections/contact-us";
 
 const IndexPage = () => {
   return (
