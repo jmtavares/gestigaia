@@ -47,6 +47,12 @@ const StyledSubTitle = styled("h2")`
   font: normal normal normal 20px/1.67em roboto-thin, roboto, sans-serif;
 `;
 
+const Legend = styled("h3")`
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  margin: 200px 0 0 0;
+`;
+
 const Home = () => (
   <HomeContainer id="home">
     <InnerSection>
@@ -58,6 +64,7 @@ const Home = () => (
         fiscais de maneira rápida e eficaz. Estamos preparados para lidar com os
         documentos, para se preocupar menos e viver mais.
       </StyledSubTitle>
+      <Legend>*Sente a diferença</Legend>
     </InnerSection>
   </HomeContainer>
 );

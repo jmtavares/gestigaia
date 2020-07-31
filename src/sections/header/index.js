@@ -4,7 +4,7 @@ import { Link } from "gatsby";
 import Logo from "../../images/logo.webp";
 import { H1 } from "../../styles/typography";
 import FacebookLogo from "../../images/facebook.webp";
-import ScrollLink from "../scroll-link";
+import ScrollLink from "../../components/scroll-link";
 
 const HeaderContainer = styled.div`
   margin: 35px 25px 0 25px;
@@ -53,7 +53,6 @@ const TitleContainer = styled.div`
   display: flex;
   align-items: center;
 `;
-const SocialLinks = styled.div``;
 
 const Header = () => (
   <HeaderContainer>
@@ -82,11 +81,11 @@ const Header = () => (
           Contacte-nos
         </ScrollLink>
       </Menus>
-      <SocialLinks>
+      <div>
         <Link to="https://www.facebook.com/gestigaia" target="_blank">
           <img src={FacebookLogo} alt="Facebook" />
         </Link>
-      </SocialLinks>
+      </div>
     </MenuContainer>
   </HeaderContainer>
 );
