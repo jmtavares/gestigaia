@@ -53,7 +53,7 @@ const AboutUs = () => (
         mais variados ramos de actividade económico-empresarial.
       </p>
     </AboutUsText>
-    <AboutUsImage src={aboutUsImage} alt="Sobre Nós"></AboutUsImage>
+    <AboutUsImage src={aboutUsImage} alt="Sobre Nós" />
   </AboutUsContainer>
 );
 

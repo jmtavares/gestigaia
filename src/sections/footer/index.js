@@ -7,9 +7,12 @@ const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin: 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
 `;
 
-const StyledLink = styled(Link)`  
+const StyledLink = styled(Link)`
   color: #081824;
 `;
 

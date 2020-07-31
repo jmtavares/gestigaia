@@ -2,6 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 import Layout from "../components/layout/layout";
 import SEO from "../components/seo";
+import { H1 } from "../styles/typography";
 
 const NotFoundContainer = styled.div`
   display: flex;
