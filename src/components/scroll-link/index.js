@@ -9,7 +9,7 @@ const MenuLink = styled(Link)`
   padding-right: 10px;
   line-height: 30px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 13px;
   &:hover {
     color: #0a4d72;
   }

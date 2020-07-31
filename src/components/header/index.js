@@ -24,13 +24,12 @@ const LogoImg = styled.img`
 `;
 
 const StyledLink = styled(Link)`
-  display: flex;
-  align-items: center;
   text-decoration: none;
   color: #081824;
 `;
 
 const LogoContainer = styled.div`
+  display: flex;
   padding-bottom: 20px;
   border-bottom: 2px solid #081824;
 
@@ -46,7 +45,14 @@ const MenuContainer = styled.div`
   justify-content: space-between;
 `;
 
-const Menus = styled.div``;
+const Menus = styled.div`
+  font-family: "Montserrat", sans-serif;
+`;
+
+const TitleContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
 const SocialLinks = styled.div``;
 
 const Header = () => (
@@ -54,8 +60,12 @@ const Header = () => (
     <LogoContainer>
       <StyledLink to="/">
         <LogoImg src={Logo} alt="Logo" />
-        <H1>Gestigaia - Gabinete de Contabilidade</H1>
       </StyledLink>
+      <TitleContainer>
+        <StyledLink to="/">
+          <H1>Gestigaia - Gabinete de Contabilidade</H1>
+        </StyledLink>
+      </TitleContainer>
     </LogoContainer>
     <MenuContainer>
       <Menus>

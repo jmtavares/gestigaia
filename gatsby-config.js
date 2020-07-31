@@ -33,6 +33,10 @@ module.exports = {
             family: `Roboto`,
             variants: [`100`],
           },
+          {
+            family: `Montserrat`,
+            variants: [`400`],
+          },
         ],
         display: "swap",
       },
