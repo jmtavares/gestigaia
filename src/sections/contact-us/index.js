@@ -24,26 +24,12 @@ const Image = styled.div`
   flex-direction: column;
   align-items: center;
   color: #fff;
-  width: 100%;
-  position: relative;
-
-  &::after {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url(${contactUsImage});
-    background-position: center top;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-  }
+  height: 1094px;
+  background: linear-gradient(#000, transparent, #000),
+    url(${contactUsImage}) 85%;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  background-size: 75%;  
 `;
 
 const Block = styled.div`
