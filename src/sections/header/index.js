@@ -7,7 +7,7 @@ import FacebookLogo from "../../images/facebook.webp";
 import ScrollLink from "../../components/scroll-link";
 
 const HeaderContainer = styled.div`
-  margin: 35px 25px 0 25px;
+  margin: 35px 25px;
   @media screen and (min-width: 768px) {
     margin: 32px 80px;
   }

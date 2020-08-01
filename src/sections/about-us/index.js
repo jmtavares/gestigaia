@@ -5,10 +5,14 @@ import aboutUsImage from "../../images/aboutus.webp";
 
 const AboutUsContainer = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   grid-column-gap: 20px;
-  margin: 80px;
+  margin: 40px 0;
   min-height: 740px;
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 50% 50%;
+    margin: 80px;
+  }
 `;
 
 const AboutUsText = styled.div`
@@ -31,6 +35,7 @@ const AboutUsImage = styled.img`
   height: 100%;
   object-position: 50% 50%;
   object-fit: cover;
+  min-height: 400px;
 `;
 
 const AboutUs = () => (

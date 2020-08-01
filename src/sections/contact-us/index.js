@@ -5,22 +5,29 @@ import contactUsImage from "../../images/contactus.webp";
 
 const ContactUsContainer = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
-  margin: 80px 80px 0 80px;
+  grid-template-columns: 100%;
+  margin: 40px 0 0 0;
+  @media screen and (min-width: 768px) {    
+    grid-template-columns: 50% 50%;
+    margin: 80px 80px 0 80px;
+  }
 `;
 
 const FormContainer = styled.div`
   background-color: #35a1de;
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 30px;
   box-sizing: border-box;
   align-items: center;
   color: #fff;
+  @media screen and (min-width: 768px) {
+    padding: 60px;
+  }
 `;
 
 const Image = styled.div`
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   color: #fff;
@@ -29,6 +36,9 @@ const Image = styled.div`
   background-attachment: fixed;
   background-blend-mode: multiply;
   background-size: 75%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 `;
 
 const Block = styled.div`
@@ -51,8 +61,11 @@ const Link = styled.a`
 
 const MapContainer = styled.div`
   height: 400px;
-  margin: 0 80px;
-  box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;  
+  @media screen and (min-width: 768px) {    
+    margin: 0 80px;
+  }  
 `;
 
 const IframeMap = styled.iframe`
@@ -95,13 +108,14 @@ const StyledTextarea = styled.textarea`
 
 const Form = styled.form`
   width: 100%;
+  max-width: 460px;
 `;
 
 const StyledButton = styled.button`
   background-color: #fff;
   color: #000;
   border: 0;
-  padding: 15px 30px;
+  padding: 15px 40px;
   cursor: pointer;
   outline: none;
 `;

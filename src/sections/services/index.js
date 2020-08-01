@@ -9,7 +9,10 @@ const ServicesContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 80px;
+  margin: 40px 0;
+  @media screen and (min-width: 768px) {
+    margin: 80px;
+  }
 `;
 const Title = styled(H1)`
   color: #8ecee6;
@@ -19,13 +22,23 @@ const SubTitle = styled.div`
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   margin-top: 27px;
+  max-width: 460px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 const Table = styled.div`
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
   width: 100%;
-  margin-top: 80px;
+  margin-top: 40px;
+
+  @media screen and (min-width: 1200px) {
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 80px;
+  }
 `;
 
 const Item = styled.div`
@@ -36,7 +49,7 @@ const Item = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 100%;
-  object-position: 50% 50%;
+  object-position: 60% 60%;
   object-fit: cover;
 `;
 
@@ -62,7 +75,10 @@ const SectionText = styled.p`
 `;
 
 const HalfContainer = styled.div`
-  height: 480px;
+  min-height: 240px;
+  @media screen and (min-width: 1200px) {
+    height: 480px;
+  }
 `;
 
 const Services = () => (

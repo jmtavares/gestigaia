@@ -7,7 +7,7 @@ const HomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   color: #fff;  
-  height: 900px;
+  min-height: 900px;
   background: linear-gradient(#000, transparent, #000),
     url(${ParallaxImg}) 50% / cover;
   background-attachment: fixed;
@@ -34,7 +34,7 @@ const StyledSubTitle = styled("h2")`
 const Legend = styled("h3")`
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
-  margin: 250px 0 0 0;
+  margin: 250px 0 50px 0;
 `;
 
 const Home = () => (
