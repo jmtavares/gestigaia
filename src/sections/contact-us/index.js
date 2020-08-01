@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import GoogleMapReact from "google-map-react";
 import { H1 } from "../../styles/typography";
 import contactUsImage from "../../images/contactus.webp";
 
@@ -25,7 +24,6 @@ const Image = styled.div`
   flex-direction: column;
   align-items: center;
   color: #fff;
-  height: 1094px;
   background: linear-gradient(#000, transparent, #000),
     url(${contactUsImage}) 85%;
   background-attachment: fixed;
@@ -63,6 +61,56 @@ const IframeMap = styled.iframe`
   border: 0;
 `;
 
+const StyledInput = styled.input`
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  height: 50px;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  box-sizing: border-box;
+  outline: none;
+  ::placeholder {
+    color: #fff;
+  }
+`;
+
+const StyledTextarea = styled.textarea`
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  height: 125px;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  box-sizing: border-box;
+  outline: none;
+  ::placeholder {
+    color: #fff;
+  }
+`;
+
+const Form = styled.form`
+  width: 100%;
+`;
+
+const StyledButton = styled.button`
+  background-color: #fff;
+  color: #000;
+  border: 0;
+  padding: 15px 30px;
+  cursor: pointer;
+  outline: none;
+`;
+
+const ButtonContainer = styled.p`
+  display: flex;
+  justify-content: flex-end;
+`;
+
 const ContactUs = () => (
   <>
     <ContactUsContainer id="contact-us">
@@ -84,6 +132,38 @@ const ContactUs = () => (
           <Link href="tel:227877190">227877190</Link>
           <Link href="tel:912536490">912536490</Link>
         </Block>
+
+        <Form name="contact" method="POST" data-netlify="true">
+          <p>
+            <StyledInput type="text" name="nome" placeholder="Nome" required />
+          </p>
+          <p>
+            <StyledInput
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </p>
+          <p>
+            <StyledInput
+              type="text"
+              name="assunto"
+              placeholder="Assunto"
+              required
+            />
+          </p>
+          <p>
+            <StyledTextarea
+              name="mensagem"
+              placeholder="A sua mensagem aqui..."
+              required
+            />
+          </p>
+          <ButtonContainer>
+            <StyledButton type="submit">Enviar</StyledButton>
+          </ButtonContainer>
+        </Form>
       </FormContainer>
       <Image />
     </ContactUsContainer>
@@ -96,7 +176,7 @@ const ContactUs = () => (
         marginheight="0"
         marginwidth="0"
         loading="lazy"
-      ></IframeMap>
+      />
     </MapContainer>
   </>
 );
