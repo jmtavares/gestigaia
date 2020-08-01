@@ -7,7 +7,7 @@ const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 20px 0;
+  margin: 40px 0;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
 `;
