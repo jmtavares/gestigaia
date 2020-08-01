@@ -6,7 +6,7 @@ const MenuLink = styled(Link)`
   text-decoration: none;
   color: #081824;
   transition: color 0.4s ease 0s;
-  padding-right: 10px;
+  padding-right: 20px;
   line-height: 30px;
   cursor: pointer;
   font-size: 13px;

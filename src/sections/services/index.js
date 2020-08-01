@@ -75,7 +75,11 @@ const Services = () => (
     <Table>
       <Item>
         <HalfContainer>
-          <Image src={servicesImg1} alt="Contabilidade e fiscalidade" />
+          <Image
+            src={servicesImg1}
+            alt="Contabilidade e fiscalidade"
+            loading="lazy"
+          />
         </HalfContainer>
         <HalfContainer>
           <Section color="#fff" backgroundColor="#094d72">
@@ -91,7 +95,7 @@ const Services = () => (
       </Item>
       <Item>
         <HalfContainer>
-          <Image src={servicesImg2} alt="Recursos humanos" />
+          <Image src={servicesImg2} alt="Recursos humanos" loading="lazy" />
         </HalfContainer>
         <HalfContainer>
           <Section color="#081824" backgroundColor="#35a1de">
@@ -112,7 +116,7 @@ const Services = () => (
       </Item>
       <Item>
         <HalfContainer>
-          <Image src={servicesImg3} alt="Seguros" />
+          <Image src={servicesImg3} alt="Seguros" loading="lazy" />
         </HalfContainer>
         <HalfContainer>
           <Section color="#081824" backgroundColor="#8dcee6">

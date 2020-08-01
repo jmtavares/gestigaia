@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "@emotion/styled";
+import GoogleMapReact from "google-map-react";
 import { H1 } from "../../styles/typography";
 import contactUsImage from "../../images/contactus.webp";
 
 const ContactUsContainer = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
-  margin: 80px;
+  margin: 80px 80px 0 80px;
 `;
 
 const FormContainer = styled.div`
@@ -29,7 +30,7 @@ const Image = styled.div`
     url(${contactUsImage}) 85%;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  background-size: 75%;  
+  background-size: 75%;
 `;
 
 const Block = styled.div`
@@ -50,27 +51,54 @@ const Link = styled.a`
   margin: 0 0 15px 0;
 `;
 
-const ContactUs = () => (
-  <ContactUsContainer id="contact-us">
-    <FormContainer>
-      <H1>Contacte-nos</H1>
-      <Block>
-        <p>Horário</p>
-        <p>Segunda a Sexta</p>
-        <p>09:00 - 13:00</p>
-        <p>14:00 - 18:00</p>
-      </Block>
+const MapContainer = styled.div`
+  height: 400px;
+  margin: 0 80px;
+  box-sizing: border-box;
+`;
 
-      <Block>
-        <p>Rua Manuel Braga 15</p>
-        <p>4430-455 Oliveira do Douro</p>
-        <Link href="mailto:gestigaia@gestigaia.pt">gestigaia@gestigaia.pt</Link>
-        <Link href="tel:227877190">227877190</Link>
-        <Link href="tel:912536490">912536490</Link>
-      </Block>
-    </FormContainer>
-    <Image />
-  </ContactUsContainer>
+const IframeMap = styled.iframe`
+  width: 100%;
+  height: 100%;
+  border: 0;
+`;
+
+const ContactUs = () => (
+  <>
+    <ContactUsContainer id="contact-us">
+      <FormContainer>
+        <H1>Contacte-nos</H1>
+        <Block>
+          <p>Horário</p>
+          <p>Segunda a Sexta</p>
+          <p>09:00 - 13:00</p>
+          <p>14:00 - 18:00</p>
+        </Block>
+
+        <Block>
+          <p>Rua Manuel Braga 15</p>
+          <p>4430-455 Oliveira do Douro</p>
+          <Link href="mailto:gestigaia@gestigaia.pt">
+            gestigaia@gestigaia.pt
+          </Link>
+          <Link href="tel:227877190">227877190</Link>
+          <Link href="tel:912536490">912536490</Link>
+        </Block>
+      </FormContainer>
+      <Image />
+    </ContactUsContainer>
+    <MapContainer>
+      <IframeMap
+        id="gmap_canvas"
+        src="https://maps.google.com/maps?q=Gestigaia-Gabinete+Contabilidade+E+Estudos+Economicos&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        frameborder="0"
+        scrolling="no"
+        marginheight="0"
+        marginwidth="0"
+        loading="lazy"
+      ></IframeMap>
+    </MapContainer>
+  </>
 );
 
 export default ContactUs;
