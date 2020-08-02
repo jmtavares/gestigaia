@@ -144,6 +144,7 @@ const ContactUs = () => (
 
         <Form
           name="contact"
+          action="/thank-you"
           method="POST"
           netlify-honeypot="bot-field"
           data-netlify="true"

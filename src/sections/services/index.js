@@ -14,9 +14,6 @@ const ServicesContainer = styled.div`
     margin: 80px;
   }
 `;
-const Title = styled(H1)`
-  color: #8ecee6;
-`;
 
 const SubTitle = styled.div`
   font-family: "Montserrat", sans-serif;
@@ -83,7 +80,7 @@ const SectionText = styled.p`
 
 const Services = () => (
   <ServicesContainer id="services">
-    <Title>Serviços</Title>
+    <H1>Serviços</H1>
     <SubTitle>
       Os serviços prestados abrangem áreas desde a contabilidade, fiscalidade,
       recursos humanos e seguros.

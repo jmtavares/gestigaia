@@ -67,7 +67,7 @@ const MobileIcon = styled.div`
     border-radius: 3px;
     content: "";
     display: block;
-    height: 5px;
+    height: 3px;
     margin: 7px 0;
     transition: all 0.2s ease-in-out;
   }
@@ -76,11 +76,11 @@ const MobileIcon = styled.div`
     props.closed &&
     `
   ::before {
-    transform: translateY(12px) rotate(135deg);
+    transform: translateY(10px) rotate(135deg);
   }
 
   ::after {
-    transform: translateY(-12px) rotate(-135deg);
+    transform: translateY(-10px) rotate(-135deg);
   }
 
   div {
