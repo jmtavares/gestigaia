@@ -58,10 +58,15 @@ const Section = styled.div`
   height: 100%;
   padding: 50px 20px;
   box-sizing: border-box;
-  color: ${(props) => props.color};
-  background-color: ${(props) => props.backgroundColor};
+  color: #000;
+  background-color: #fff;
   min-height: 300px;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    color: ${(props) => props.color};
+    background-color: ${(props) => props.backgroundColor};
+  }
 `;
 
 const SectionTitle = styled.h1`
