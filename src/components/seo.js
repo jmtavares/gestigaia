@@ -9,7 +9,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
-import logo from "../images/logo.webp";
+import seoImage from '../images/parallax1.webp'
 
 function SEO({ description, lang, meta, keywords, title }) {
   const defaultKeywords = ["Contabilidade", "Recursos Humanos", "Seguros"];
@@ -30,7 +30,7 @@ function SEO({ description, lang, meta, keywords, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const fullImageUrl = `${site.siteMetadata.url}${logo}`
+  const fullImageUrl = `${site.siteMetadata.url}${seoImage}`
 
   return (
     <Helmet
