@@ -85,7 +85,6 @@ const SharedInputStyled = css`
   width: 100%;
   color: #fff;
   box-sizing: border-box;
-  outline: none;
   ::placeholder {
     color: #fff;
   }
@@ -113,6 +112,10 @@ const StyledButton = styled.button`
   padding: 15px 40px;
   cursor: pointer;
   outline: none;
+  font-weight: bold;
+  &:hover {
+    box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.5);
+  }
 `;
 
 const ButtonContainer = styled.p`
@@ -187,6 +190,7 @@ const ContactUs = () => (
     <MapContainer>
       <IframeMap
         id="gmap_canvas"
+        title="Mapa"
         src="https://maps.google.com/maps?q=Gestigaia-Gabinete+Contabilidade+E+Estudos+Economicos&t=&z=15&ie=UTF8&iwloc=&output=embed"
         frameborder="0"
         scrolling="no"

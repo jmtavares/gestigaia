@@ -11,6 +11,7 @@ const MenuLink = styled(Link)`
   font-size: 20px;
   &:hover {
     color: #0a4d72;
+    text-decoration: underline;
   }
 
   @media screen and (min-width: 768px) {
