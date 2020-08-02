@@ -30,6 +30,7 @@ function SEO({ description, lang, meta, keywords, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const fullImageUrl = `${site.siteMetadata.url}${logo}`
 
   return (
     <Helmet
@@ -64,7 +65,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           property: `og:image`,
-          content: logo,
+          content: fullImageUrl,
         },
         {
           name: `twitter:card`,
@@ -84,7 +85,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `twitter:image`,
-          content: logo,
+          content: fullImageUrl,
         },
       ]
         .concat(
