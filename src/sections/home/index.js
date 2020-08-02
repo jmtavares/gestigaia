@@ -21,14 +21,20 @@ const InnerSection = styled.div`
 
 const StyledTitle = styled("h1")`
   margin: 180px 0 0 0;
-  font-size: 72px;
+  font-size: 40px;  
   font-weight: bold;
+  @media screen and (min-width: 768px) {
+    font-size: 72px;
+  }
 `;
 
 const StyledSubTitle = styled("h2")`
   margin: 50px 0 0 0;
   font-weight: normal;
-  font: normal normal normal 20px/1.67em roboto-thin, roboto, sans-serif;
+  font: normal normal normal 18px/1.67em roboto-thin, roboto, sans-serif;
+  @media screen and (min-width: 768px) {
+    font: normal normal normal 20px/1.67em roboto-thin, roboto, sans-serif;
+  }
 `;
 
 const Legend = styled("h3")`
