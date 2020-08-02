@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { css } from "@emotion/core";
 import { H1 } from "../../styles/typography";
 import contactUsImage from "../../images/contactus.webp";
 
@@ -7,7 +8,7 @@ const ContactUsContainer = styled.div`
   display: grid;
   grid-template-columns: 100%;
   margin: 40px 0 0 0;
-  @media screen and (min-width: 768px) {    
+  @media screen and (min-width: 768px) {
     grid-template-columns: 50% 50%;
     margin: 80px 80px 0 80px;
   }
@@ -62,10 +63,10 @@ const Link = styled.a`
 const MapContainer = styled.div`
   height: 400px;
   margin: 0;
-  box-sizing: border-box;  
-  @media screen and (min-width: 768px) {    
+  box-sizing: border-box;
+  @media screen and (min-width: 768px) {
     margin: 0 80px;
-  }  
+  }
 `;
 
 const IframeMap = styled.iframe`
@@ -74,7 +75,7 @@ const IframeMap = styled.iframe`
   border: 0;
 `;
 
-const StyledInput = styled.input`
+const SharedInputStyled = css`
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   background-color: transparent;
@@ -90,20 +91,14 @@ const StyledInput = styled.input`
   }
 `;
 
+const StyledInput = styled.input`
+  ${SharedInputStyled}
+  height: 50px;
+`;
+
 const StyledTextarea = styled.textarea`
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  background-color: transparent;
-  border: 1px solid #fff;
+  ${SharedInputStyled}
   height: 125px;
-  padding: 10px;
-  width: 100%;
-  color: #fff;
-  box-sizing: border-box;
-  outline: none;
-  ::placeholder {
-    color: #fff;
-  }
 `;
 
 const Form = styled.form`

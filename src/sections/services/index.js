@@ -61,7 +61,7 @@ const Section = styled.div`
   color: ${(props) => props.color};
   background-color: ${(props) => props.backgroundColor};
   min-height: 300px;
-  text-align: center;    
+  text-align: center;
 `;
 
 const SectionTitle = styled.h1`
