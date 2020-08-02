@@ -4,6 +4,7 @@ module.exports = {
     description: `Na Gestigaia prestamos serviços de contabilidade, fiscalidade, recursos humanos e seguros no grande porto, Vila nova de Gaia, Oliveira do Douro`,
     author: `Gestigaia`,
     siteUrl: `https://www.gestigaia.pt/`,
+    url: `https://www.gestigaia.pt/`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
@@ -18,7 +19,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
         display: `fullscreen`,
-        icon: 'src/images/logo.webp'
+        icon: "src/images/logo.webp",
       },
     },
     {
@@ -37,13 +38,18 @@ module.exports = {
             family: `Montserrat`,
             variants: [`400`],
           },
-        ]        
+        ],
       },
     },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    //`gatsby-plugin-offline`    
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-56447609-6",
+      },
+    },
   ],
 };

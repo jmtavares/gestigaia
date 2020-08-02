@@ -9,6 +9,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
+import logo from "../images/logo.webp";
 
 function SEO({ description, lang, meta, keywords, title }) {
   const defaultKeywords = ["Contabilidade", "Recursos Humanos", "Seguros"];
@@ -21,6 +22,7 @@ function SEO({ description, lang, meta, keywords, title }) {
             title
             description
             author
+            url
           }
         }
       }
@@ -45,6 +47,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: site.siteMetadata.url,
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -55,6 +61,10 @@ function SEO({ description, lang, meta, keywords, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: logo,
         },
         {
           name: `twitter:card`,
@@ -71,6 +81,10 @@ function SEO({ description, lang, meta, keywords, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: logo,
         },
       ]
         .concat(
