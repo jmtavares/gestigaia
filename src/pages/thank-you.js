@@ -35,7 +35,7 @@ const StyledLink = styled(Link)`
   color: #094d72;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;    
+  font-size: 20px;
 `;
 
 const Title = styled(H1)`

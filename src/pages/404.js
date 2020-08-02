@@ -34,7 +34,7 @@ const StyledLink = styled(Link)`
   :hover {
     background-color: #094d72;
   }
-`
+`;
 
 const NotFoundPage = () => (
   <Layout>
