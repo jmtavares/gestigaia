@@ -57,8 +57,12 @@ const Section = styled.div`
   box-sizing: border-box;
   color: #000;
   background-color: #fff;
-  min-height: 300px;
+  min-height: 360px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (min-width: 768px) {
     color: ${(props) => props.color};

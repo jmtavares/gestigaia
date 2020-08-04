@@ -3,8 +3,8 @@ module.exports = {
     title: `Gestigaia - Gabinete de Contabilidade | Seguros | Oliveira do Douro`,
     description: `Na Gestigaia prestamos serviços de contabilidade, fiscalidade, recursos humanos e seguros no grande porto, Vila nova de Gaia, Oliveira do Douro`,
     author: `Gestigaia`,
-    siteUrl: `https://gestigaia.netlify.app`,
-    url: `https://gestigaia.netlify.app`,
+    siteUrl: `https://www.gestigaia.pt/`,
+    url: `https://www.gestigaia.pt/`,
   },
   plugins: [
     `gatsby-plugin-sitemap`,
