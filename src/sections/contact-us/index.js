@@ -35,7 +35,7 @@ const Image = styled.div`
   background: url(${contactUsImage}) 85%;
   background-attachment: fixed;
   background-blend-mode: multiply;
-  background-size: 75%;
+  background-size: 50%;
   @media screen and (min-width: 768px) {
     display: flex;
   }
