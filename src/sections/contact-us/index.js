@@ -108,12 +108,17 @@ const StyledButton = styled.button`
   background-color: #fff;
   color: #000;
   border: 0;
-  padding: 15px 40px;
+  padding: 15px 0;
   cursor: pointer;
   outline: none;
   font-weight: bold;
+  width: 100%;
   &:hover {
     box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.5);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 120px;
   }
 `;
 
