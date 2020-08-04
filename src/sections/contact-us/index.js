@@ -15,7 +15,7 @@ const ContactUsContainer = styled.div`
 `;
 
 const FormContainer = styled.div`
-  background-color: #35a1de;
+  background-color: #094d72;
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -32,8 +32,7 @@ const Image = styled.div`
   flex-direction: column;
   align-items: center;
   color: #fff;
-  background: linear-gradient(#000, transparent, #000),
-    url(${contactUsImage}) 85%;
+  background: url(${contactUsImage}) 85%;
   background-attachment: fixed;
   background-blend-mode: multiply;
   background-size: 75%;

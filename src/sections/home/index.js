@@ -8,8 +8,7 @@ const HomeContainer = styled.div`
   align-items: center;
   color: #fff;
   min-height: 900px;
-  background: linear-gradient(#000, transparent, #000),
-    url(${ParallaxImg}) 50% / cover;
+  background: url(${ParallaxImg}) 50% / cover;
   background-attachment: fixed;
   background-blend-mode: multiply;
 `;
@@ -23,6 +22,7 @@ const StyledTitle = styled("h1")`
   margin: 180px 0 0 0;
   font-size: 40px;
   font-weight: bold;
+  text-shadow: 2px 2px 8px #000;
   @media screen and (min-width: 768px) {
     font-size: 72px;
   }
@@ -32,6 +32,7 @@ const StyledSubTitle = styled("h2")`
   margin: 50px 0 0 0;
   font-weight: normal;
   font: normal normal normal 18px/1.67em roboto-thin, roboto, sans-serif;
+  text-shadow: 2px 2px 8px #000;
   @media screen and (min-width: 768px) {
     font: normal normal normal 20px/1.67em roboto-thin, roboto, sans-serif;
   }
@@ -41,6 +42,7 @@ const Legend = styled("h3")`
   font-size: 15px;
   font-family: "Montserrat", sans-serif;
   margin: 250px 0 50px 0;
+  text-shadow: 2px 2px 8px #000;
 `;
 
 const Home = () => (
