@@ -36,7 +36,7 @@ const Footer = () => (
         Resolução de Conflitos
       </StyledLink>
     </Row>
-    <Row>©2020 by Gestigaia Lda</Row>
+    <Row>©2022 by Gestigaia Lda</Row>
   </FooterContainer>
 );
 
