@@ -22,34 +22,9 @@ module.exports = {
         icon: "src/images/logo.webp",
       },
     },
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Cormorant+Garamond`,
-            variants: [`400`, `600`],
-          },
-          {
-            family: `Roboto`,
-            variants: [`100`],
-          },
-          {
-            family: `Montserrat`,
-            variants: [`400`],
-          },
-        ],
-      },
-    },
     `gatsby-plugin-netlify`,
     `gatsby-plugin-emotion`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GA
-      },
-    },
   ],
 };
