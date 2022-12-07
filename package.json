@@ -1,9 +1,23 @@
 {
   "name": "gestigaia",
+  "version": "1.0.0",
   "private": true,
   "description": "gestigaia",
-  "version": "1.0.0",
+  "keywords": [],
+  "license": "MIT",
   "author": "Jose Tavares",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.js",
+    "lint": "eslint 'src/' --color --ext .js",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
+    "test": "npm run lint"
+  },
+  "resolutions": {
+    "sharp": "^0.29.0"
+  },
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
@@ -30,16 +44,5 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0"
-  },
-  "keywords": [],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.js",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "npm run lint",
-    "lint": "eslint 'src/' --color --ext .js"
   }
 }

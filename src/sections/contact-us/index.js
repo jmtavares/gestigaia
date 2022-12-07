@@ -59,6 +59,10 @@ const Link = styled.a`
   margin: 0 0 15px 0;
 `;
 
+const PhoneLink = styled(Link)`
+  margin: 0;
+`;
+
 const MapContainer = styled.div`
   height: 400px;
   margin: 0;
@@ -145,8 +149,15 @@ const ContactUs = () => (
           <Link href="mailto:gestigaia@gestigaia.pt">
             gestigaia@gestigaia.pt
           </Link>
-          <Link href="tel:227877190">227877190</Link>
-          <Link href="tel:912536490">912536490</Link>
+          <Block>
+            <PhoneLink href="tel:227877190">227877190</PhoneLink>
+            <small>(Chamada para a rede fixa nacional)</small>
+          </Block>
+
+          <Block>
+            <PhoneLink href="tel:912536490">912536490</PhoneLink>
+            <small>(Chamada para a rede móvel nacional)</small>
+          </Block>
         </Block>
 
         <Form
